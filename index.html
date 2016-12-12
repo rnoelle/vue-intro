@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Intro</title>
+  </head>
+  <body>
+
+    <div id="app1">
+      {{message}}
+    </div>
+
+    <div id="app2">
+      <p v-if="seen">{{message}}</p>
+      <ul>
+        <dog-listing v-for="dog in dogs"
+          v-bind:dog="dog">
+        </dog-listing>
+      </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="./vue-apps.js"></script>
+  </body>
+</html>
